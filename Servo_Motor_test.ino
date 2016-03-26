@@ -12,7 +12,7 @@ void setup() {
   pinMode(LEFT_MOTOR_PWM, OUTPUT);
   pinMode(RIGHT_MOTOR_PWM, OUTPUT);
   
-  foward();
+  forward();
   delay(2000);
   backward();
   delay(2000);
@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-  foward();
+  forward();
   for(int i = 0; i < 180; i += 10)
   {
     myServo.write(i);
@@ -36,7 +36,7 @@ void loop() {
   }
 }
 
-void foward()
+void forward()
 {
   digitalWrite(LEFT_MOTOR_DIR, HIGH);
   digitalWrite(RIGHT_MOTOR_DIR, HIGH);
